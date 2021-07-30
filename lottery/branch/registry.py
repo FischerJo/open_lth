@@ -7,11 +7,13 @@ from lottery.branch.base import Branch
 from lottery.branch import randomly_prune
 from lottery.branch import randomly_reinitialize
 from lottery.branch import retrain
+from lottery.branch import permute_subnetwork
 
 registered_branches = {
     'randomly_prune': randomly_prune.Branch,
     'randomly_reinitialize': randomly_reinitialize.Branch,
     'retrain': retrain.Branch,
+    'permute_subnetwork' : permute_subnetwork.Branch,
 }
 
 
